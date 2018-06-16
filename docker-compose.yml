@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  1.1-ubuntu18:
+    build:
+      context: ./ubuntu-18
+      dockerfile: ../Dockerfile
+      args:
+        BUILDER_VERSION: ubuntu18
+        GOLANG_VERSION: 1.10.3
+        GODEP_VERSION: 0.4.1
+    image: odaceo/golang:4.1-ubuntu18
+
