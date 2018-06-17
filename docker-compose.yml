@@ -8,6 +8,5 @@ services:
       dockerfile: ../Dockerfile
       args:
         BUILDER_VERSION: ubuntu18
-        GOLANG_VERSION: 1.10.3
-        GODEP_VERSION: 0.4.1
+        GOLANG_VERSION: '1.10'
     image: odaceo/golang:1.10-ubuntu18
